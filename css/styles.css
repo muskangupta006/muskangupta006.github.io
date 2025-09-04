@@ -4441,3 +4441,10 @@ td:last-child {
         right: -2rem;
     }
 }
+/* === Custom Header Logo Fix === */
+.s-header__logo h2 {
+  font-size: 20px;   /* make smaller */
+  margin: 0;         /* remove default spacing */
+  line-height: 1;    /* better vertical alignment */
+  color: white;      /* adjust to match navbar */
+}
