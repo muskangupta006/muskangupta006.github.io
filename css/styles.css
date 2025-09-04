@@ -4448,3 +4448,27 @@ td:last-child {
   line-height: 1;    /* better vertical alignment */
   color: white;      /* adjust to match navbar */
 }
+.s-testimonials__text p {
+  margin-bottom: 1rem;    /* spacing between paragraphs */
+  line-height: 1.6;       /* easier to read */
+  font-size: 1.05rem;     /* not too small, not too big */
+}
+
+/* Limit text width so it doesn’t stretch edge-to-edge */
+.s-testimonials__text {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .s-testimonials__text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .s-testimonials__avatar {
+    width: 50px;
+    height: 50px;
+  }
+}
