@@ -4480,3 +4480,30 @@ td:last-child {
     flex: 1;  /* expands to fill remaining space */
   }
 }
+
+/* Default: two-column layout on large screens */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-section .column {
+  flex: 1;
+  min-width: 45%;
+}
+
+/* Mobile: stack everything */
+@media (max-width: 768px) {
+  .project-section {
+    display: block;
+  }
+  .project-section .column {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  /* Order override: title/blurb → report → slideshow */
+  .left-col { order: 1; }
+  .right-col { order: 2; }
+  .slideshow-col { order: 3; }
+}
